@@ -3430,7 +3430,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(handleFilter_1).wait(1));
 
 	// Curve
-	this.directive = new cjs.Text("Click on  the stage to reveal the molecule's pKa value and molecular structure.\n\nThen, click the plot button to update the titration curve.", "normal 700 32px 'Lato'");
+	this.directive = new cjs.Text("Click on  the stage to reveal the molecule's pKa value and molecular structure.\n\nClick the plot button to update the titration curve.", "normal 700 32px 'Lato'");
 	this.directive.name = "directive";
 	this.directive.lineHeight = 38;
 	this.directive.lineWidth = 321;
@@ -3918,16 +3918,16 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/CachedBmp_1.png?1653965489109", id:"CachedBmp_1"},
-		{src:"images/plus_slider_atlas_1.png?1653965489019", id:"plus_slider_atlas_1"},
-		{src:"images/plus_slider_atlas_2.png?1653965489019", id:"plus_slider_atlas_2"},
-		{src:"images/plus_slider_atlas_3.png?1653965489021", id:"plus_slider_atlas_3"},
-		{src:"images/plus_slider_atlas_4.png?1653965489021", id:"plus_slider_atlas_4"},
-		{src:"images/plus_slider_atlas_5.png?1653965489021", id:"plus_slider_atlas_5"},
-		{src:"images/plus_slider_atlas_6.png?1653965489021", id:"plus_slider_atlas_6"},
-		{src:"images/plus_slider_atlas_7.png?1653965489021", id:"plus_slider_atlas_7"},
-		{src:"images/plus_slider_atlas_8.png?1653965489022", id:"plus_slider_atlas_8"},
-		{src:"images/plus_slider_atlas_9.png?1653965489022", id:"plus_slider_atlas_9"}
+		{src:"images/CachedBmp_1.png?1653996913071", id:"CachedBmp_1"},
+		{src:"images/plus_slider_atlas_1.png?1653996912982", id:"plus_slider_atlas_1"},
+		{src:"images/plus_slider_atlas_2.png?1653996912982", id:"plus_slider_atlas_2"},
+		{src:"images/plus_slider_atlas_3.png?1653996912983", id:"plus_slider_atlas_3"},
+		{src:"images/plus_slider_atlas_4.png?1653996912983", id:"plus_slider_atlas_4"},
+		{src:"images/plus_slider_atlas_5.png?1653996912983", id:"plus_slider_atlas_5"},
+		{src:"images/plus_slider_atlas_6.png?1653996912984", id:"plus_slider_atlas_6"},
+		{src:"images/plus_slider_atlas_7.png?1653996912984", id:"plus_slider_atlas_7"},
+		{src:"images/plus_slider_atlas_8.png?1653996912984", id:"plus_slider_atlas_8"},
+		{src:"images/plus_slider_atlas_9.png?1653996912984", id:"plus_slider_atlas_9"}
 	],
 	preloads: []
 };
