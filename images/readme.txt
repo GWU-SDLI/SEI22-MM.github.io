@@ -1,1 +1,1 @@
-Image refresh
+purge of cached images
