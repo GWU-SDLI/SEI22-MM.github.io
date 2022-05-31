@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!-- This code was written by Ricky Graham for Michael Massiah during Spring 2022 
+<!--
+	Written by Ricky Graham May 2022 for Michael Massiah
 	NOTES:
 	1. All tokens are represented by '$' sign in the template.
 	2. You can write your code only wherever mentioned.
@@ -70,11 +71,13 @@ function isFontAvailable(font, obj) {
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:700&subset=latin">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular&subset=latin">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:regular&subset=latin">
-<script src="plus_slider.js"></script>
+<script src="plus_slider.js?1653963946969"></script>
 <script>
 // Global Scripts
 	var pka;
 var combo_pka;
+var last_combo_pka;
+var current_combo_selection;
 var slider_num = 0;
 var coords = []; //store plot coords for node snap
 var dict = [];
@@ -82,12 +85,19 @@ var titration_coords = []; //const means the array cannot be reassigned / common
 const map1 = new Map();
 var acids = [];
 var plot_flag = 0;
+var button_flag = false;
 var d_curve;
 var last_ph = 0;
 function getScaledValue(value, sourceRangeMin, sourceRangeMax, targetRangeMin, targetRangeMax) {
     var targetRange = targetRangeMax - targetRangeMin;
     var sourceRange = sourceRangeMax - sourceRangeMin;
     return (value - sourceRangeMin) * targetRange / sourceRange + targetRangeMin;
+}
+function displayDirective(status) {	
+	if(status = true) {
+		button_flag = true;
+		console.log("what is the bf val?", button_flag);
+	}
 }</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -148,7 +158,6 @@ function handleComplete(evt,comp) {
 </script>
 <!-- write your code here -->
 </head>
-						      
 <body onload="init();" style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:50%; height:50%">
 		<canvas id="canvas" width="50%" height="50%" style="position: relative; transform: scale(0.5); transform-origin: top left; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
